@@ -19,16 +19,7 @@ alloy-sol-types = { version = "=0.8.20", default-features = false }
 [dev-dependencies]
 motsu = "0.2.1"
 
-alloy = { version = "=1.0.20", features = [
-  "contract",
-  "network",
-  "providers",
-  "provider-http",
-  "rpc-client",
-  "rpc-types-eth",
-  "signer-local",
-  "getrandom",
-] }
+
 
 [features]
 export-abi = ["stylus-sdk/export-abi", "openzeppelin-stylus/export-abi"]
