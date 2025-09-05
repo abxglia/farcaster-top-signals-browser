@@ -50,7 +50,8 @@ export class SignalsAPI {
 
     // Prefer Vite env; fallback to local dev default
     // Example: VITE_SIGNALS_API_BASE_URL=https://your-server.example.com
-    this.baseUrl = (import.meta as any)?.env?.VITE_SIGNALS_API_BASE_URL || 'http://localhost:3000';
+    this.baseUrl = (import.meta as any).env.VITE_SIGNALS_API_BASE_URL || '';
+    console.log('baseUrl', (import.meta as any).env.VITE_SIGNALS_API_BASE_URL);
   }
 
   public static getInstance(): SignalsAPI {
